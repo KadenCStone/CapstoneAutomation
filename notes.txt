@@ -1,0 +1,110 @@
+Item view -> Search -> Shopping Cart
+
+Item view
+Steps:
+    1. Visit Personalized Gifts & Unique Gift Ideas | Qualtry 
+
+    2. Select “view all” under “Popular Products“
+
+    3. Select “Large” view option
+
+    4. Scroll to bottom of page verifying they all changed to same format
+
+    5. Verify same format on all pages
+
+    6. Back on page 1, Change option to “Small”
+
+    7. Repeat steps 4 and 5 but verifying “Small” format
+
+    8. Back on page 1, Change option to “List“
+
+    9. Repeat steps 4 and 5 but verifying “List” format
+
+Small Description:
+Testing the 3 "Item Veiw" options and verifying it works on every page after selected.
+
+
+Search
+Steps:
+    1. Visit Personalized Gifts & Unique Gift Ideas | Qualtry 
+
+    2. Click “Search” 
+
+    3. Search for something such as “coasters” or “cutting board”
+
+    4. Expect to see options of those searched
+
+    5. Search something with special characters
+
+    6. Expecting result of item searched for despite special characters
+
+    7. Search something with numbers
+
+    8. Expecting result if item searched for despite numbers
+
+    9. Search just special characters
+
+    10. Expecting results to be nothing specific
+
+    11. Search just numbers
+
+    12. Expecting results to be nothing at all
+
+    13. See if you can search "Ω"
+
+    14. Expecting results to be nothing at all
+
+    15. Search something unrelated to the site such as “Space Station”
+
+    16. Expecting results to be nothing
+
+    17. See if you can search with 50+ words in search bar
+
+    18. How about more? How many is too long?
+
+    19. Expecting less than 1000 but more than 200 words
+
+Small Description:
+Testing the search bar to see how it handles loads of letters, numbers, symbols, 
+etc. and making sure it pulls relevant results.
+
+Quck notes:
+Qualtry search poops out at 10046 characters “Words, spaces, periods etc”
+For one word poops out between 10230 and 10241
+
+
+Shopping Cart
+Steps: 
+    1. Visit Personalized Gifts & Unique Gift Ideas | Qualtry 
+
+    2. Add items to shopping cart
+
+    3. Refresh page to make sure they’re still there
+
+    4. Add some more, and go to shopping cart
+
+    5. Add some from the “Recently Viewed” tab
+
+    6. Remove a couple items
+
+    7. Click continue shopping
+
+    8. Add all items on site to cart
+
+    9. Select items in cart to verify they take you to said item
+
+    10. Click “+“ button on a couple items to up to 2 or 3
+
+    11. Select the “-“ button on one and “remove” on another
+
+    12. Check the box next to “Is this a gift?“
+
+    13. Type a message
+
+    14. Click “check out”
+
+    15. Click “shop pay”
+
+Small Description:
+Testing all shopping cart buttons, textbox for custom message, and checkboxes as well as
+adding all items on site to cart.
