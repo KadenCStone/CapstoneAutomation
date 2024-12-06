@@ -1,15 +1,15 @@
-import { $ } from '@wdio/globals'
-import Site from './page.js'
-import {textOne, textTwo, textThree, textFour, textFive, textSix, textSeven, textEight, eightUrl, textNine, nineUrl} from './searchValues.js'
-
+import { $ } from '@wdio/globals';
+import Site from './page.js';
+import {textOne, textTwo, textThree, textFour, textFive, textSix, textSeven, textEight, eightUrl, textNine, nineUrl, textTen, tenUrl, textBomb} from './searchValues.js';
+import popup from './popup.js';
 
 
 class searchBar extends Site {
     get Bar () {
-        return $('//div[@class="header-item header-item--search small--hide"]/form/input[@placeholder="Search..."]')
+        return $('//div[@class="header-item header-item--search small--hide"]/form/input[@placeholder="Search..."]');
     }
     get searchBtn() {
-        return $('//div[@class="header-item header-item--search small--hide"]/form/button[@class="text-link site-header__search-btn site-header__search-btn--submit"]')
+        return $('//div[@class="header-item header-item--search small--hide"]/form/button[@class="text-link site-header__search-btn site-header__search-btn--submit"]');
     }
     async find () {
         await browser.url('https://qualtry.com');
@@ -77,7 +77,21 @@ class searchBar extends Site {
 
         await browser.url('https://qualtry.com');
 
+        popup.closePopup();
+
+        await this.Bar.setValue(textTen);
+        await this.searchBtn.click();
+        await expect(browser).toHaveUrl(tenUrl);
+
+        await browser.url('https://qualtry.com');
+
+
+        await this.Bar.setValue(textBomb);
+        await browser.pause(500);
+
+        await browser.url('https://qualtry.com');
+
     }
 }
 
-export default new searchBar
+export default new searchBar;

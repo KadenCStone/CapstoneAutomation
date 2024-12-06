@@ -1,6 +1,6 @@
-import { $ } from '@wdio/globals'
-import Site from './page.js'
-import bike from './cycle.js'
+import { $ } from '@wdio/globals';
+import Site from './page.js';
+import bike from './cycle.js';
 
 class itemView extends Site {
     get viewAll () {
@@ -10,37 +10,37 @@ class itemView extends Site {
         return $('//button[@title="Small"]');
     }
     get largeVeiw () {
-        return $('//button[@data-view="large"]')
+        return $('//button[@data-view="large"]');
     }
     get listView () {
-        return $('//button[@data-view="list"]')
+        return $('//button[@data-view="list"]');
     }
     async flow () {
 
-        await this.open()
+        await this.open();
 
-        await expect(browser).toHaveUrl('https://www.qualtry.com/')
+        await expect(browser).toHaveUrl('https://www.qualtry.com/');
 
-        await this.viewAll.click()
-        await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1')
+        await this.viewAll.click();
+        await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1');
 
-        await this.smallView.click()
-        await bike.cycleThrough()
+        await this.smallView.click();
+        await bike.cycleThrough();
 
-        await browser.url('https://www.qualtry.com/collections/christmas-1')
+        await browser.url('https://www.qualtry.com/collections/christmas-1');
         
-        await this.largeVeiw.click()
-        await bike.cycleThrough()
+        await this.largeVeiw.click();
+        await bike.cycleThrough();
 
-        await browser.url('https://www.qualtry.com/collections/christmas-1')
+        await browser.url('https://www.qualtry.com/collections/christmas-1');
 
-        await this.listView.click()
-        await bike.cycleThrough()
+        await this.listView.click();
+        await bike.cycleThrough();
 
-        await browser.url('https://www.qualtry.com')
+        await browser.url('https://www.qualtry.com');
 
     }
     
 }
 
-export default new itemView
+export default new itemView;
