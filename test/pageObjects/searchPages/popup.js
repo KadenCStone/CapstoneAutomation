@@ -1,5 +1,5 @@
 import { $ } from '@wdio/globals'
-import Site from './page.js';
+import Site from '../page.js';
 
 class popup extends Site {
 

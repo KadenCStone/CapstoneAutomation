@@ -1,6 +1,6 @@
 import { $ } from '@wdio/globals';
 import Site from './page.js';
-import bike from './cycle.js';
+import bike from './itemPages/cycle.js';
 
 class itemView extends Site {
     get viewAll () {

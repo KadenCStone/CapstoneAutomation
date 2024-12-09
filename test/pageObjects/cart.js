@@ -1,25 +1,38 @@
 import { $ } from '@wdio/globals';
 import Site from './page.js';
-import addCart from './addToCart.js';
+import addCart from './cartPages/addToCart.js';
+import recentlyViewed from './cartPages/recentlyViewed.js';
 
 class Cart extends Site {
 
-    get goCart () {
-        return $('#HeaderCartTrigger');
-    }
 
 
     async Complete () {
         await browser.url('https://qualtry.com');
 
         await addCart.add();
-        await browser.pause(1500);
+        await browser.pause(1500);  //take out    
+
 
         await expect(browser).toHaveUrl('https://www.qualtry.com/');
-        await browser.pause(1500);
+        await browser.pause(1500);  //take out
 
-        await this.goCart.click();
-        await browser.pause(5000);
+            //open cart and add some from "recently viewed"
+        await recentlyViewed.toCart();
+
+        
+        //calling "removeCart" from removeCart.js to remove a couple items using the "remove" button and selecting the "-" symbol
+
+
+        //calling in "addEverything" from addingItAll.js to add everything on the site to the cart 
+
+        //calling in "cartCheck" from checkMyCart.js to check all links in cart to make sure they take me to the same place as when I clicked "add to cart"
+
+        //calling in "checkMessage" from checkbox.js to check the box and write a message
+
+        // selecting "checkout" then going back to cart
+
+        //selecting "shop pay"
     }
 }
 export default new Cart;

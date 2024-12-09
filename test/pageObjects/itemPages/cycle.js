@@ -1,5 +1,5 @@
 import { $ } from '@wdio/globals';
-import Site from './page.js';
+import Site from '../page.js';
 
 class bike extends Site {
     get nextPageBtn() {
@@ -8,47 +8,47 @@ class bike extends Site {
     async cycleThrough () {
         
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-bells-vintage-christmas-ornament"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=2');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-red-truck-christmas-ornaments"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=3');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-christmas-snowflakes-garden-flag"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=4');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-merry-and-bright-magnet-yard-set"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=5');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-joy-to-the-world-round-barky-ornament"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=6');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-christmas-truck-plaid-gnomes-wall-hanging"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=7');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-paw-christmas-stocking"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=8');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-cookies-for-santa-plate"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=9');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-christmas-plaid-stocking"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=10');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-merry-christmas-garden-flag"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=11');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-plaid-stocking"]').waitForDisplayed({ timeout: 2000 });
     }
 }
 

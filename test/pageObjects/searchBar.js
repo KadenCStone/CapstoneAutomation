@@ -1,7 +1,7 @@
 import { $ } from '@wdio/globals';
 import Site from './page.js';
-import {textOne, textTwo, textThree, textFour, textFive, textSix, textSeven, textEight, eightUrl, textNine, nineUrl, textTen, tenUrl, textBomb} from './searchValues.js';
-import popup from './popup.js';
+import {textOne, textTwo, textThree, textFour, textFive, textSix, textSeven, textEight, eightUrl, textNine, nineUrl, textTen, tenUrl, textBomb} from './searchPages/searchValues.js';
+import popup from './searchPages/popup.js';
 
 
 class searchBar extends Site {
@@ -17,63 +17,64 @@ class searchBar extends Site {
         await this.Bar.setValue(textOne);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=Cutting+Board');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-cutting-board-11x17-bamboo"]').waitForDisplayed({ timeout: 500 });
+
 
         await browser.url('https://qualtry.com');
         
         await this.Bar.setValue(textTwo);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=%40Cutting*Board%29');
-        await browser.pause(500)
+        await $('[data-product-handle="personalized-bamboo-cutting-board-11x14-rounded-edge-modern-collection"]').waitForDisplayed({ timeout: 500 });
 
         await browser.url('https://qualtry.com');
 
         await this.Bar.setValue(textThree);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=Stocking3');
-        await browser.pause(500);
+        await $('[data-product-handle="personalized-merry-and-bright-velvet-trimmed-christmas-stockings"]').waitForDisplayed({ timeout: 500 });
 
         await browser.url('https://qualtry.com');
 
         await this.Bar.setValue(textFour);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=%23%26*%28%40%28%24');
-        await browser.pause(500)
+        await $('[data-product-handle="personalized-plaid-christmas-stockings-1"]').waitForDisplayed({ timeout: 500 });
 
         await browser.url('https://qualtry.com');
 
         await this.Bar.setValue(textFive);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=97459187358913847');
-        await browser.pause(500);
+        await $('.hr--medium').waitForDisplayed({ timeout: 1000 });
 
         await browser.url('https://qualtry.com');
 
         await this.Bar.setValue(textSix);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=%CE%A9');
-        await browser.pause(500);
+        await $('.hr--medium').waitForDisplayed({ timeout: 1000 });
 
         await browser.url('https://qualtry.com');
 
         await this.Bar.setValue(textSeven);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=Space+Station');
-        await browser.pause(500);
+        await $('.hr--medium').waitForDisplayed({ timeout: 1000 });
 
         await browser.url('https://qualtry.com');
 
         await this.Bar.setValue(textEight);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl(eightUrl);
-        await browser.pause(500);
+        await $('.hr--medium').waitForDisplayed({ timeout: 2000 });
 
         await browser.url('https://qualtry.com');
 
         await this.Bar.setValue(textNine);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl(nineUrl);
-        await browser.pause(500);
+        await $('.hr--medium').waitForDisplayed({ timeout: 3000 });
 
         await browser.url('https://qualtry.com');
 
@@ -87,7 +88,6 @@ class searchBar extends Site {
 
 
         await this.Bar.setValue(textBomb);
-        await browser.pause(500);
 
         await browser.url('https://qualtry.com');
 
