@@ -10,6 +10,9 @@ class addPlus extends Site {
     get plusSecond () {
         return $('//div[@class="cart__item-details"]/div[@class="cart__item-title"]/a[contains(text(), "Personalized Friendsgiving Stemless Wine Glass")]/ancestor::div[@class="cart__item-details"]//div[@class="js-qty__wrapper"]/button[@aria-label="Increase item quantity by one"]');
     }
+    get continueShopping () {
+        return $('//a[@href="/collections/karis-test"]');
+    }
     async Continue () {
 
         await browser.url('https://www.qualtry.com/cart');
@@ -20,6 +23,9 @@ class addPlus extends Site {
 
         await this.plusSecond.scrollIntoView();
         await this.plusSecond.click();
+
+        await this.continueShopping.click()
+        await expect(browser).toHaveUrl('https://www.qualtry.com/collections/karis-test')
 
         await browser.url('https://www.qualtry.com');
     }

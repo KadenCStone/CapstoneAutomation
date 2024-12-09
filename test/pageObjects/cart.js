@@ -11,13 +11,10 @@ class Cart extends Site {
         await browser.url('https://qualtry.com');
 
         await addCart.add();
-        await browser.pause(1500);  //take out    
-
 
         await expect(browser).toHaveUrl('https://www.qualtry.com/');
-        await browser.pause(1500);  //take out
 
-            //open cart and add some from "recently viewed"
+        //open cart and add some from "recently viewed"
         await recentlyViewed.toCart();
 
         
