@@ -2,6 +2,7 @@ import { $ } from '@wdio/globals';
 import Site from './page.js';
 import addCart from './cartPages/addToCart.js';
 import recentlyViewed from './cartPages/recentlyViewed.js';
+import removeThese from './cartPages/removeCart.js'
 
 class Cart extends Site {
 
@@ -19,7 +20,7 @@ class Cart extends Site {
 
         
         //calling "removeCart" from removeCart.js to remove a couple items using the "remove" button and selecting the "-" symbol
-
+        await removeThese.itemsPlease();
 
         //calling in "addEverything" from addingItAll.js to add everything on the site to the cart 
 
