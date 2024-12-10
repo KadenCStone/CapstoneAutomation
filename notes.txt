@@ -68,11 +68,6 @@ Small Description:
 Testing the search bar to see how it handles loads of letters, numbers, symbols, 
 etc. and making sure it pulls relevant results.
 
-Quck notes:
-Qualtry search poops out at 10046 characters “Words, spaces, periods etc”
-For one word poops out between 10230 and 10241
-
-
 Shopping Cart
 Steps: 
     1. Visit Personalized Gifts & Unique Gift Ideas | Qualtry 
@@ -108,3 +103,145 @@ Steps:
 Small Description:
 Testing all shopping cart buttons, textbox for custom message, and checkboxes as well as
 adding all items on site to cart.
+
+
+p1i1
+selector:   $('[data-product-handle="personalized-plaid-christmas-stockings-1"]')
+link:   https://www.qualtry.com/products/personalized-plaid-christmas-stockings-1?variant=42357068398780
+
+p1i2
+selector:   $('[data-product-handle="personalized-velvet-trimmed-christmas-stockings"]')
+link:   https://www.qualtry.com/products/personalized-velvet-trimmed-christmas-stockings?variant=19853718093937
+
+p1i3
+selector:   $('[data-product-handle="personalized-christmas-santa-bags"]')
+link:   https://www.qualtry.com/products/personalized-christmas-santa-bags?variant=42294677897404
+
+p1i4
+selector:   $('[data-product-handle="personalized-christmas-santa-bags-cotton"]')
+link:       https://www.qualtry.com/products/personalized-christmas-santa-bags-cotton?variant=42705776312508
+
+p1i5
+selector:   $('[data-product-handle="customized-velvet-christmas-stockings"]')
+link:   https://www.qualtry.com/products/customized-velvet-christmas-stockings?variant=1111212032015
+
+p1i6
+selector:   $('[data-product-handle="personalized-christmas-serving-boards-4-designs"]')
+link:   https://www.qualtry.com/products/personalized-christmas-serving-boards-4-designs?variant=6327755012
+
+p1i7
+selector:   $('[data-product-handle="personalized-kids-santa-bags-cotton"]')
+link:   https://www.qualtry.com/products/personalized-kids-santa-bags-cotton?variant=42431340347580
+
+p1i8
+selector:   $('[data-product-handle="personalized-red-and-green-plaid-stockings-printed"]')
+link:   https://www.qualtry.com/products/personalized-red-and-green-plaid-stockings-printed?variant=44217114525884
+
+p1i9
+selector:   $('[data-product-handle="personalized-holiday-bamboo-cutting-board-11x14-rounded-edge"]')
+link:   https://www.qualtry.com/products/personalized-holiday-bamboo-cutting-board-11x14-rounded-edge?variant=42373292589244
+
+p1i10
+selector:   $('[data-product-handle="personalized-photo-ceramic-christmas-ornaments"]')
+link:   https://www.qualtry.com/products/personalized-photo-ceramic-christmas-ornaments?variant=37543620214972
+
+p1i11
+selector:   $('[data-product-handle="personalized-drawstring-santa-gift-bag-1"]')
+link:   https://www.qualtry.com/products/personalized-drawstring-santa-gift-bag-1?variant=42357072298172
+
+p1i12
+selector:   $('[data-product-handle="personalized-kids-santa-bags"]')
+link:   https://www.qualtry.com/products/personalized-kids-santa-bags?variant=42291950977212
+
+p1i13
+selector:   $('[data-product-handle="jumbo-santa-bag"]')
+link:   https://www.qualtry.com/products/jumbo-santa-bag?variant=779631230991
+
+p1i14
+selector:   $('[data-product-handle="personalized-merry-and-bright-velvet-trimmed-christmas-stockings"]')
+link:   https://www.qualtry.com/products/personalized-merry-and-bright-velvet-trimmed-christmas-stockings?variant=42201933185212
+
+p1i15
+selector:   $('[data-product-handle="personalized-woodland-christmas-throw-pillow-covers"]')
+link:   https://www.qualtry.com/products/personalized-woodland-christmas-throw-pillow-covers?variant=41910796943548
+
+p1i16
+selector:   $('[data-product-handle="personalized-farmhouse-christmas-tea-towels"]')
+link:   https://www.qualtry.com/products/personalized-farmhouse-christmas-tea-towels?variant=30278007095409
+
+p1i17
+selector:   $('[data-product-handle="santa-s-nice-or-naughty-list-throw-pillow-covers"]')
+link:   https://www.qualtry.com/products/santa-s-nice-or-naughty-list-throw-pillow-covers?variant=30118151880817
+
+p1i18
+selector:   $('[data-product-handle="personalized-2020-drawstring-santa-gift-bags"]')
+link:   https://www.qualtry.com/products/personalized-2020-drawstring-santa-gift-bags?variant=32131356819569
+
+p1i19
+selector:   $('[data-product-handle="personalized-christmas-tea-towels-1"]')
+link:   https://www.qualtry.com/products/personalized-christmas-tea-towels-1?variant=42377581363388
+
+p1i20
+selector:   $('[data-product-handle="personalized-jumbo-santa-gift-bags-santa-s-workshop-collection"]')
+link:   https://www.qualtry.com/products/personalized-jumbo-santa-gift-bags-santa-s-workshop-collection?variant=30310114525297
+
+p1i21
+selector:   $('[data-product-handle="personalized-cotton-stocking-with-tassel-printed-name-2"]')
+link:   https://www.qualtry.com/products/personalized-cotton-stocking-with-tassel-printed-name-2?variant=42308009066684
+
+p1i22
+selector:   $('[data-product-handle="personalized-11x17-christmas-bamboo-cutting-boards-1"]')
+link:   https://www.qualtry.com/products/personalized-11x17-christmas-bamboo-cutting-boards-1?variant=44345023856828
+
+p1i23
+selector:   $('[data-product-handle="personalized-velvet-trimmed-christmas-pet-stockings"]')
+link:   https://www.qualtry.com/products/personalized-velvet-trimmed-christmas-pet-stockings?variant=42201605996732
+
+p1i24
+selector:   $('[data-product-handle="personalized-small-christmas-season-gift-bags"]')
+link:   https://www.qualtry.com/products/personalized-small-christmas-season-gift-bags?variant=42351602630844
+
+p1i25
+selector:   $('[data-product-handle="personalized-princess-santa-bags-cotton"]')
+link:   https://www.qualtry.com/products/personalized-princess-santa-bags-cotton?variant=42431706366140
+
+p1i26
+selector:   $('[data-product-handle="personalized-merry-and-bright-christmas-drawstring-santa-gift-bags"]')
+link:   https://www.qualtry.com/products/personalized-merry-and-bright-christmas-drawstring-santa-gift-bags?variant=42201721864380
+
+p1i27
+selector:   $('[data-product-handle="santa-s-nice-or-naughty-list-personalized-tea-towels"]')
+link:   https://www.qualtry.com/products/santa-s-nice-or-naughty-list-personalized-tea-towels?variant=30292503986289
+
+p1i28
+selector:   $('[data-product-handle="personalized-merry-and-bright-christmas-gift-bags"]')
+link:   https://www.qualtry.com/products/personalized-merry-and-bright-christmas-gift-bags?variant=42201758695612
+
+p1i29
+selector:   $('[data-product-handle="personalized-is-it-christmas-yeti-ornament"]')
+link:   https://www.qualtry.com/products/personalized-is-it-christmas-yeti-ornament?variant=44127887917244
+
+p1i30
+selector:   $('[data-product-handle="personalized-red-ribbon-santa-gift-bags-santa-s-workshop-collection"]')
+link:   https://www.qualtry.com/products/personalized-red-ribbon-santa-gift-bags-santa-s-workshop-collection?variant=30310106660977
+
+p1i31
+selector:   $('[data-product-handle="personalized-snowman-vintage-christmas-tea-towel"]')
+link:   https://www.qualtry.com/products/personalized-snowman-vintage-christmas-tea-towel?variant=44203032215740
+
+p1i32
+selector:   return $('[data-product-handle="personalized-holiday-tea-towels"]')
+link:   https://www.qualtry.com/products/personalized-holiday-tea-towels?variant=42372953342140
+
+p1i33
+selector:   $('[data-product-handle="personalized-velvet-trimmed-christmas-stockings-for-girls"]')
+link:   https://www.qualtry.com/products/personalized-velvet-trimmed-christmas-stockings-for-girls?variant=42202494501052
+
+p1i34
+selector:    $('[data-product-handle="personalized-holiday-gift-bags"]')
+link:   https://www.qualtry.com/products/personalized-holiday-gift-bags?variant=30310132351089
+
+
+p1i35
+selector:   $('[data-product-handle="personalized-bells-vintage-christmas-ornament"]')
+link:   https://www.qualtry.com/products/personalized-bells-vintage-christmas-ornament?variant=44161817379004
