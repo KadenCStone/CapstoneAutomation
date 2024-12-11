@@ -245,3 +245,129 @@ link:   https://www.qualtry.com/products/personalized-holiday-gift-bags?variant=
 p1i35
 selector:   $('[data-product-handle="personalized-bells-vintage-christmas-ornament"]')
 link:   https://www.qualtry.com/products/personalized-bells-vintage-christmas-ornament?variant=44161817379004
+
+
+      
+      
+      
+        Might need to review p1 links
+
+
+
+
+
+p2i1        bottomLine
+selector:   $('[data-product-handle="personalized-cotton-stocking-with-tassel-pet-designs-2"]');
+link: https://www.qualtry.com/products/personalized-cotton-stocking-with-tassel-pet-designs-2?variant=42308010410172
+
+p2i2        bottomLine
+selector:   $('[data-product-handle="personalized-drawstring-santa-gift-bags-for-girls"]');
+link:   https://www.qualtry.com/products/personalized-drawstring-santa-gift-bags-for-girls?variant=42360480923836
+
+p2i3        personalSkirt    
+selector:   $('[data-product-handle="personalized-burlap-christmas-tree-skirt"]');
+link:   https://www.qualtry.com/products/personalized-burlap-christmas-tree-skirt
+
+p2i4        sizeOption bottomLine
+selector:   $('[data-product-handle="personalized-princess-santa-bags"]');
+link:   https://www.qualtry.com/products/personalized-princess-santa-bags?variant=42291926532284
+
+p2i5        bottomLine
+selector:   $('[data-product-handle="personalized-traditional-christmas-pillowcases"]');
+link:   https://www.qualtry.com/products/personalized-traditional-christmas-pillowcases?variant=42201651085500
+
+p2i6        bottomLine
+selector:   $('[data-product-handle="personalized-kids-christmas-round-ceramic-ornament"]');
+link:   https://www.qualtry.com/products/personalized-kids-christmas-round-ceramic-ornament?variant=42910607245500
+
+p2i7        bottomLine
+selector:   $('[data-product-handle="christmas-boy-superhero-pillowcases"]');
+link:   https://www.qualtry.com/products/christmas-boy-superhero-pillowcases?variant=752382476303
+
+p2i8        nameOption
+selector:   $('[data-product-handle="personalized-christmas-pillowcases"]');
+link:   https://www.qualtry.com/products/personalized-christmas-pillowcases?variant=32138426843249
+
+p2i9        (none just reviewCheck)
+selector:   $('[data-product-handle="non-personalized-11-oz-christmas-mugs"]');
+link:   https://www.qualtry.com/products/non-personalized-11-oz-christmas-mugs?variant=41164117213372
+
+p2i10       primaryText
+selector:   $('[data-product-handle="christmas-princess-pillowcases"]');
+link:   https://www.qualtry.com/products/christmas-princess-pillowcases?variant=752341319695
+
+p2i11       bottomLine
+selector:   $('[data-product-handle="personalized-christmas-silicone-oven-mitts"]');
+link:   https://www.qualtry.com/products/personalized-christmas-silicone-oven-mitts?variant=42400118898876
+
+p2i12        primaryText
+selector:   $('[data-product-handle="personalized-vintage-christmas-throw-pillow-covers"]');
+link:   https://www.qualtry.com/products/personalized-vintage-christmas-throw-pillow-covers?variant=44203868946620
+
+p2i13       bottomLine
+selector:   $('[data-product-handle="personalized-merry-and-bright-jumbo-santa-gift-bags"]');
+link:   https://www.qualtry.com/products/personalized-merry-and-bright-jumbo-santa-gift-bags?variant=42201681821884
+
+p2i14       sizeOption and nameOption
+selector:   $('[data-product-handle="personalized-festive-holiday-mugs"]');
+link:   https://www.qualtry.com/products/personalized-festive-holiday-mugs?variant=32155744927857
+
+p2i15       nameOption and dateOption
+selector:   $('[data-product-handle="copy-of-personalized-christmas-round-ceramic-ornament"]');
+link:   https://www.qualtry.com/products/copy-of-personalized-christmas-round-ceramic-ornament?variant=41098626302140
+
+p2i16       secondSizeOption and personalCaps
+selector:   $('[data-product-handle="personalized-red-truck-christmas-doormat"]');
+link:   https://www.qualtry.com/products/personalized-red-truck-christmas-doormat
+
+p2i17       secondSizeOption and personalCaps and personalLow
+selector:   $('[data-product-handle="personalized-merry-christmas-with-burlap-gnome-doormat-1"]');
+link:   https://www.qualtry.com/products/personalized-merry-christmas-with-burlap-gnome-doormat-1
+
+p2i18       secondSizeOption and personalLow
+selector:   $('[data-product-handle="personalized-vintage-santa-doormat"]');
+link:   https://www.qualtry.com/products/personalized-vintage-santa-doormat
+
+p2i19       printSide and personalCaps and personaLow
+selector:   $('[data-product-handle="personalized-welcome-gingham-snowman-garden-flag-1"]');
+link:   https://www.qualtry.com/products/personalized-welcome-gingham-snowman-garden-flag-1
+
+p2i20       printSide and personalLow and personal2Low
+selector:   $('[data-product-handle="personalized-merry-christmas-truck-garden-flag"]');
+link:       https://www.qualtry.com/products/personalized-merry-christmas-truck-garden-flag
+
+
+
+
+
+p3i1
+Selector:
+link:
+
+p3i2
+Selector:
+link:
+
+p3i3
+Selector:
+link:
+
+p3i4
+Selector:
+link:
+
+p3i5
+Selector:
+link:
+
+p3i6
+Selector:
+link:
+
+p3i7
+Selector:
+link:
+
+p3i8
+Selector:
+link:

@@ -10,7 +10,7 @@ class Cart extends Site {
 
 
     async Complete () {
-        // await browser.url('https://qualtry.com');
+        await browser.url('https://qualtry.com');
 
         // await addCart.add();
 

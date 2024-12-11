@@ -195,6 +195,9 @@ get firstText() {
 get secondText() {
     return $('#second-line-1');
 }
+get bottomConfirm() {
+    return $('[class="bottom-banner confirmation opened"]');
+}
 
 async go1 () {
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -438,7 +441,7 @@ async go1 () {
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
     await this.p1i31.click();
-    await this.primaryText.click();
+    await this.primaryText.setValue('BOBBERT');
     await this.reviewCheck.click();
     await this.addTo.click();
 
@@ -474,6 +477,11 @@ async go1 () {
     await this.reviewCheck.click()
     await this.addTo.click();
     
+    const cartNumber = await this.cartConfirm.getText();
+
+    await expect(cartNumber).toBe('35');
+
+
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
 

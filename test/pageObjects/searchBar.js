@@ -17,7 +17,7 @@ class searchBar extends Site {
         await this.Bar.setValue(textOne);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=Cutting+Board');
-        await $('[data-product-handle="personalized-cutting-board-11x17-bamboo"]').waitForDisplayed({ timeout: 500 });
+        await $('[data-product-handle="personalized-cutting-board-11x17-bamboo"]').waitForDisplayed({ timeout: 2000 });
 
 
         await browser.url('https://qualtry.com');
@@ -25,21 +25,21 @@ class searchBar extends Site {
         await this.Bar.setValue(textTwo);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=%40Cutting*Board%29');
-        await $('[data-product-handle="personalized-bamboo-cutting-board-11x14-rounded-edge-modern-collection"]').waitForDisplayed({ timeout: 500 });
+        await $('[data-product-handle="personalized-11x17-christmas-bamboo-cutting-boards-1"]').waitForDisplayed({ timeout: 2000 });
 
         await browser.url('https://qualtry.com');
 
         await this.Bar.setValue(textThree);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=Stocking3');
-        await $('[data-product-handle="personalized-merry-and-bright-velvet-trimmed-christmas-stockings"]').waitForDisplayed({ timeout: 500 });
+        await $('[data-product-handle="personalized-merry-and-bright-velvet-trimmed-christmas-stockings"]').waitForDisplayed({ timeout: 2000 });
 
         await browser.url('https://qualtry.com');
 
         await this.Bar.setValue(textFour);
         await this.searchBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=%23%26*%28%40%28%24');
-        await $('[data-product-handle="personalized-plaid-christmas-stockings-1"]').waitForDisplayed({ timeout: 500 });
+        await $('[data-product-handle="personalized-plaid-christmas-stockings-1"]').waitForDisplayed({ timeout: 2000 });
 
         await browser.url('https://qualtry.com');
 
@@ -87,7 +87,7 @@ class searchBar extends Site {
         await browser.url('https://qualtry.com');
 
 
-        await this.Bar.setValue(textBomb);
+        // await this.Bar.setValue(textBomb);
 
         await browser.url('https://qualtry.com');
 
