@@ -149,7 +149,7 @@ class pageThree extends Site {
         await browser.url('https://www.qualtry.com/collections/christmas-1?page=3');
 
         const cartNumber = await this.cartConfirm.getText();
-        await expect(cartNumber).toBe('63');
+        await expect(cartNumber).toBe('65');
 
     }
 }

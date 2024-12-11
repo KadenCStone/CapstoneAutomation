@@ -323,7 +323,7 @@ get cartConfirm() {
 
         const cartNumber = await this.cartConfirm.getText();
 
-        await expect(cartNumber).toBe('55');
+        await expect(cartNumber).toBe('57');
         
         await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
 

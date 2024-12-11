@@ -136,9 +136,6 @@ class pageFour extends Site {
     get reviewCheck() {
         return $('.custom-checkbox  ');
     }
-    get cartConfirm() {
-        return $('[class="cart-link__bubble-num"]');
-    }
     get bottomConfirm() {
         return $('[class="bottom-banner confirmation opened"]');
     }
@@ -384,7 +381,7 @@ class pageFour extends Site {
 
 
     const cartNumber = await this.cartConfirm.getText();
-        await expect(cartNumber).toBe('94');
+        await expect(cartNumber).toBe('96');
 
     };
 

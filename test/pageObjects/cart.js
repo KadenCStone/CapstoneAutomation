@@ -12,18 +12,18 @@ class Cart extends Site {
     async Complete () {
         await browser.url('https://qualtry.com');
 
-        // await addCart.add();
+        await addCart.add();
 
-        // await expect(browser).toHaveUrl('https://www.qualtry.com/');
+        await expect(browser).toHaveUrl('https://www.qualtry.com/');
 
-        // //open cart and add some from "recently viewed"
-        // await recentlyViewed.toCart();
+        //open cart and add some from "recently viewed"
+        await recentlyViewed.toCart();
 
         
-        // //calling "removeCart" from removeCart.js to remove a couple items using the "remove" button and selecting the "-" symbol
-        // await removeThese.itemsPlease();
+        //calling "removeCart" from removeCart.js to remove a couple items using the "remove" button and selecting the "-" symbol
+        await removeThese.itemsPlease();
 
-        //calling in "addEverything" from addingItAll.js to add everything on the site to the cart
+        // calling in "addEverything" from addingItAll.js to add everything on the site to the cart
         await addEverything.toCart();
 
         //calling in "cartCheck" from checkMyCart.js to check all links in cart to make sure they take me to the same place as when I clicked "add to cart"

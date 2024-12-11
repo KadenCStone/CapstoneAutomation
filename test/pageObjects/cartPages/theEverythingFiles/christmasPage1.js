@@ -485,7 +485,7 @@ async go1 () {
     
     const cartNumber = await this.cartConfirm.getText();
 
-    await expect(cartNumber).toBe('35');
+    await expect(cartNumber).toBe('37');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
