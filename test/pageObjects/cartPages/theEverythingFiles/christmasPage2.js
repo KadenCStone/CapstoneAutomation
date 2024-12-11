@@ -139,6 +139,7 @@ get cartConfirm() {
         await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
         
         await this.p2i1.click();
+        await this.bottomLine.scrollIntoView();
         await this.bottomLine.setValue('George');
         await this.reviewCheck.click();
         await this.addTo.click();

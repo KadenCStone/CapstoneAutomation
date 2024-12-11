@@ -196,7 +196,10 @@ get secondText() {
     return $('#second-line-1');
 }
 get bottomConfirm() {
-    return $('[class="bottom-banner confirmation opened"]');
+    return $('.bottom-banner confirmation opened');
+}
+get cartConfirm() {
+    return $('[class="cart-link__bubble-num"]');
 }
 
 async go1 () {
@@ -211,6 +214,7 @@ async go1 () {
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
     await this.p1i2.click();
+    await this.i2Text.waitForDisplayed();
     await this.i2Text.setValue('Merica')
     await this.reviewCheck.click();
     await this.addTo.click();
@@ -476,6 +480,8 @@ async go1 () {
     await this.primaryText.setValue('suitcase');
     await this.reviewCheck.click()
     await this.addTo.click();
+
+    await browser.url('https://www.qualtry.com/collections/christmas-1');
     
     const cartNumber = await this.cartConfirm.getText();
 

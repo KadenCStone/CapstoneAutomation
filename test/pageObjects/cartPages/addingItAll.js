@@ -2,6 +2,7 @@ import { $ } from '@wdio/globals';
 import Site from '../page.js';
 import pageOne from './theEverythingFiles/christmasPage1.js';
 import pageTwo from './theEverythingFiles/christmasPage2.js';
+import pageThree from './theEverythingFiles/christmasPage3.js';
 
 class addEverything extends Site {
     get nextPage() {
@@ -29,9 +30,11 @@ class addEverything extends Site {
         await this.nextPage.scrollIntoView()
         await $('[data-product-handle="personalized-christmas-snowflakes-garden-flag"]').waitForDisplayed({ timeout: 4000 });
 
-        // await this.nextPage.click();
-        // await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=4');
-        // await $('[data-product-handle="personalized-welcome-gingham-gnome-doormat"]').waitForDisplayed({ timeout: 4000 });
+        await pageThree.go3();
+
+        await this.nextPage.click();
+        await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=4');
+        await $('[data-product-handle="personalized-welcome-gingham-gnome-doormat"]').waitForDisplayed({ timeout: 4000 });
 
         // await this.nextPage.click();
         // await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=5');
