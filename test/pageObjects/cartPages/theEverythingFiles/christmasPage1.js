@@ -214,7 +214,7 @@ async go1 () {
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
     await this.p1i2.click();
-    await this.i2Text.waitForDisplayed();
+    await this.i2Text.waitForExist();
     await this.i2Text.setValue('Merica')
     await this.reviewCheck.click();
     await this.addTo.click();
