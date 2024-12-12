@@ -1,7 +1,7 @@
 import { browser } from '@wdio/globals';
 
 export default class Site {
-    open () {
+    pullUp () {
         return browser.url('https://www.qualtry.com');
     }
 }

@@ -172,216 +172,218 @@ class pageFour extends Site {
 
     await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i4.click();
-    await this.personalMod.setValue('NameHereFolks');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+        //sold out yay
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i4.click();
+    // await this.personalMod.setValue('NameHereFolks');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i5.click();
-    await this.personalMod.setValue('hereWEGO');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i5.click();
+    // await this.personalMod.setValue('hereWEGO');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i6.click();
-    await this.personalCaps.setValue('INCOMING');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i6.click();
+    // await this.personalCaps.setValue('INCOMING');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i7.click();
-    await this.personalMod.setValue('nextplease');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i7.click();
+    // await this.personalMod.setValue('nextplease');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i8.click();
-    await this.famFirst.setValue('Buckingham');
-    await this.famName.setValue('YOOO');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4'); 
+    // await this.p4i8.click();
+    // await this.famFirst.setValue('Buckingham');
+    // await this.famName.setValue('YOOO');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i9.click();
-    await this.personalMod.setValue('HeyGuys');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4'); 
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i9.click();
+    // await this.personalMod.setValue('HeyGuys');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i10.click();
-    await this.personalMod.setValue('GuyHey');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i10.click();
+    // await this.personalMod.setValue('GuyHey');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i11.click();
-    await this.personalMod.setValue('HeyYouGuys');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i11.click();
+    // await this.personalMod.setValue('HeyYouGuys');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i12.click();
-    await this.personalMod.setValue('GuysGuys');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i12.click();
+    // await this.personalMod.setValue('GuysGuys');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i13.click();
-    await this.personalMod.setValue('HEyHey');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i13.click();
+    // await this.personalMod.setValue('HEyHey');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i14.click();
-    await this.personalMod.setValue('HelloGuys');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i14.click();
+    // await this.personalMod.setValue('HelloGuys');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i15.click();
-    await this.personalMod.setValue('GuysHello');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i15.click();
+    // await this.personalMod.setValue('GuysHello');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i16.click();
-    await this.personalMod.setValue('Guyshere');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i16.click();
+    // await this.personalMod.setValue('Guyshere');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await this.p4i17.click();
-    await this.personalMod.setValue('heresguys');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await this.p4i17.click();
+    // await this.personalMod.setValue('heresguys');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
 
-    await this.p4i18.click();
-    await this.sizeOption.click();
-    await this.personalMod.setValue('Worthington');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i18.click();
+    // await this.sizeOption.click();
+    // await this.personalMod.setValue('Worthington');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i19.click();
-    await this.sizeOption.click();
-    await this.personalMod.setValue('Worthington');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i19.click();
+    // await this.sizeOption.click();
+    // await this.personalMod.setValue('Worthington');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i20.click();
-    await this.printSide.click();
-    await this.personalMod.setValue('Bunny');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i20.click();
+    // await this.printSide.click();
+    // await this.personalMod.setValue('Bunny');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i21.click();
-    await this.personalMod.setValue('Fox');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i21.click();
+    // await this.personalMod.setValue('Fox');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i22.click();
-    await this.personalMod.setValue('TrotFox');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i22.click();
+    // await this.personalMod.setValue('TrotFox');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i23.click();
-    await this.printSide.click();
-    await this.personalMod.setValue('Bunny');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i23.click();
+    // await this.printSide.click();
+    // await this.personalMod.setValue('Bunny');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i24.click();
-    await this.personalMod.setValue('hound');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i24.click();
+    // await this.personalMod.setValue('hound');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
     
-    await this.p4i25.click();
-    await this.personalMod.setValue('wolf');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i25.click();
+    // await this.personalMod.setValue('wolf');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i26.click();
-    await this.personalMod.setValue('rabbit');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i26.click();
+    // await this.personalMod.setValue('rabbit');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i27.click();
-    await this.personalMod.setValue('mole');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i27.click();
+    // await this.personalMod.setValue('mole');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i28.click();
-    await this.printSide.click();
-    await this.personalMod.setValue('Fly');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i28.click();
+    // await this.printSide.click();
+    // await this.personalMod.setValue('Fly');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i29.click();
-    await this.personalMod.setValue('bear');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i29.click();
+    // await this.personalMod.setValue('bear');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i30.click();
-    await this.printSide.click();
-    await this.personalMod.setValue('Fly');
-    await this.personalSecond.setValue('herring');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i30.click();
+    // await this.printSide.click();
+    // await this.personalMod.setValue('Fly');
+    // await this.personalSecond.setValue('herring');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
-    await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
+    // await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
-    await this.p4i31.waitForExist();
-    await this.p4i31.click();
-    await this.personalMod.setValue('bear');
-    await this.addVerify.click();
-    await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
+    // await this.p4i31.waitForExist();
+    // await this.p4i31.click();
+    // await this.personalMod.setValue('bear');
+    // await this.addVerify.click();
+    // await expect(browser).toHaveUrl('https://www.qualtry.com/cart');
 
     await browser.url('https://www.qualtry.com/collections/christmas-1?page=4');
 
 
 
     const cartNumber = await this.cartConfirm.getText();
-        await expect(cartNumber).toBe('96');
+        await expect(cartNumber).toBe('95');
 
     };
 

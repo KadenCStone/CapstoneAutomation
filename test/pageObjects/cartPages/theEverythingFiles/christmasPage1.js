@@ -160,10 +160,9 @@ get p1i33 () {
 get p1i34 () {
     return $('[data-product-handle="personalized-holiday-gift-bags"]');
 }
-get p1i35 () {
-    return $('[data-product-handle="personalized-bells-vintage-christmas-ornament"]');
-}
-
+// get p1i35 () {
+//     return $('[data-product-handle="personalized-bells-vintage-christmas-ornament"]');
+// }
 
 get addTo() {
     return $('[data-default-text="Add to cart"]');
@@ -196,14 +195,26 @@ get secondText() {
     return $('#second-line-1');
 }
 get bottomConfirm() {
-    return $('.bottom-banner confirmation opened');
+    return $('[class="bottom-banner-buttons"]');
 }
 get cartConfirm() {
     return $('[class="cart-link__bubble-num"]');
 }
 
+get viewBtn() {
+    return $('[class="icon icon-view-list"]');
+}
+
 async go1 () {
+
+
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+
+    var cartNumber = await this.cartConfirm.getText();
+
+
+    await this.viewBtn.click();
+
 
     await this.p1i1.click();
     await this.i1Color.click();
@@ -218,6 +229,7 @@ async go1 () {
     await this.i2Text.setValue('Merica')
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
 
     
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -227,6 +239,7 @@ async go1 () {
     await this.bottomLine.setValue('Turner');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -236,20 +249,16 @@ async go1 () {
     await this.bottomLine.setValue('Jimmothy');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
     await this.p1i5.click();
-
     await this.i1Color.click();
-
     await this.i1Design.click();
-
     await this.i5Text.setValue('Harry');
-
     await this.addTo.click();
-
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -257,6 +266,7 @@ async go1 () {
     await this.bottomLine.setValue('Jorge');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -266,6 +276,8 @@ async go1 () {
     await this.bottomLine.setValue('Jimmothy');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -273,6 +285,8 @@ async go1 () {
     await this.i8Initial.setValue('K');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -290,13 +304,17 @@ async go1 () {
     await this.reviewCheck.click();
     await this.addTo.click();
 
+
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
+    await this.p1i11.waitForDisplayed({ timeout: 3000 });
     await this.p1i11.click();
     await this.primaryText.setValue('Benjamin');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
 
+    
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
 
@@ -305,6 +323,8 @@ async go1 () {
     await this.bottomLine.setValue('HelloAgain');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -312,13 +332,18 @@ async go1 () {
     await this.primaryText.setValue('Beth');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+
 
     await this.p1i14.click();
     await this.bottomLine.setValue('harold');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -328,6 +353,8 @@ async go1 () {
     await this.relatedProducts.isClickable();
     await this.relatedProducts.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -335,6 +362,8 @@ async go1 () {
     await this.primaryText.setValue('Bernie');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -343,6 +372,8 @@ async go1 () {
     await this.nameOption.setValue('Vlad');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -357,6 +388,8 @@ async go1 () {
     await this.primaryText.setValue('Barry');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -364,6 +397,8 @@ async go1 () {
     await this.primaryText.setValue('Henry');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -371,6 +406,8 @@ async go1 () {
     await this.nameOption.setValue('Jerry');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -378,6 +415,8 @@ async go1 () {
     await this.bottomLine.setValue('Jimmothy');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -385,6 +424,8 @@ async go1 () {
     await this.bottomLine.setValue('aiefja');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -393,6 +434,8 @@ async go1 () {
     await this.bottomLine.setValue('asdlfjaef');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -402,6 +445,8 @@ async go1 () {
     await this.bottomLine.setValue('princessing');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -409,6 +454,8 @@ async go1 () {
     await this.bottomLine.setValue('Karen');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -417,6 +464,8 @@ async go1 () {
     await this.nameOption.setValue('Henry');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -424,6 +473,8 @@ async go1 () {
     await this.bottomLine.setValue('Timmy');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
     
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -433,6 +484,8 @@ async go1 () {
     await this.primaryText.setValue('homeslice');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -441,6 +494,8 @@ async go1 () {
     await this.secondText.setValue('werwev');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -448,6 +503,8 @@ async go1 () {
     await this.primaryText.setValue('BOBBERT');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -456,6 +513,8 @@ async go1 () {
     await this.secondaryText.setValue('aeuhaie')
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -464,6 +523,8 @@ async go1 () {
     await this.bottomLine.setValue('asejfaliejf');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
     
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -473,19 +534,29 @@ async go1 () {
     await this.secondText.setValue('harry');
     await this.reviewCheck.click();
     await this.addTo.click();
+    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
-    await this.p1i35.click();
-    await this.primaryText.setValue('suitcase');
-    await this.reviewCheck.click()
-    await this.addTo.click();
+    //sold out yay
+    // await this.p1i35.click();
+    // await this.primaryText.setValue('suitcase');
+    // await this.reviewCheck.click()
+    // await this.addTo.click();
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
     
-    const cartNumber = await this.cartConfirm.getText();
-
-    await expect(cartNumber).toBe('37');
+    await browser.waitUntil(
+        async () => {
+            cartNumber = await this.cartConfirm.getText();
+            return cartNumber === '37';
+        },
+        {
+            timeout: 5000,
+            timeoutMsg: 'Cart number did not update to 6 within the timeout'
+        }
+    );
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');

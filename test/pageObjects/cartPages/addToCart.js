@@ -63,17 +63,20 @@ class addCart extends Site {
     get continueShopping () {
         return $('//button[contains(text(), "CONTINUE SHOPPING")]');
     }
-
+    get cartConfirm() {
+        return $('[class="cart-link__bubble-num"]');
+    }
+    get bottomConfirm() {
+        return $('[class="bottom-banner-buttons"]');
+    }
 
     async add () {
-        //search for first item
         await this.searchBar.setValue(textOne);
         await this.searchGo.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=Cutting+Board');
 
-        //adding of first item (cutting board)
         await this.addCutBoard.click();
-        await $('#DynamicPreviewFormWrap').waitForDisplayed({ timeout: 2000 });
+        $('#DynamicPreviewFormWrap').waitForDisplayed({ timeout: 2000 });
         await this.selectDesign.click();
         await this.selectColor.click();
         await this.firstLine.setValue('Caw Caw');
@@ -81,23 +84,25 @@ class addCart extends Site {
         await this.thirdLine.setValue('est. 7.4.1776');
         await this.checkbox.click();
         await this.submitCart.click();
-        await this.continueShopping.click();
+        await this.bottomConfirm.waitForDisplayed()
+        
 
-        //refresh page
         await browser.url('https://www.qualtry.com');
 
-        //adding of next 4 items (Coasters, Mug, Shot Glass, and Wallet)
 
         await this.searchBar.setValue(Glass);
         await this.searchGo.click();
 
-        popup.closePopup();
-
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=Glass');
+
+        popup.closePopup();
 
         await this.addGlass.click();
         await this.checkbox.click();
         await this.submitCart.click();
+        $('.bottom-banner-buttons').waitForDisplayed({ timeout: 20000 })
+
+        
 
         await browser.url('https://www.qualtry.com');
 
@@ -108,7 +113,9 @@ class addCart extends Site {
         await this.addMug.click();
         await this.checkbox.click();
         await this.submitCart.click();
+        popup.closePopup();
         await this.continueShopping.click();
+    
 
         await browser.url('https://www.qualtry.com');
 
@@ -120,11 +127,12 @@ class addCart extends Site {
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=Shot+Glass');
 
         await this.addShot.click();
-        await $('#DynamicPreviewFormWrap').waitForDisplayed({ timeout: 2000 });
+        await $('[class="dynamic-preview-form-section extra"]').waitForDisplayed({ timeout: 2000 });
         await this.shotSelect.click();
         await this.fillShot.setValue('K');
         await this.checkbox.click();
         await this.submitCart.click();
+        await this.continueShopping.click();
 
 
         await browser.url('https://www.qualtry.com');
@@ -145,8 +153,25 @@ class addCart extends Site {
 
         await browser.url('https://www.qualtry.com');
 
+
+        var cartNumber = await this.cartConfirm.getText();
+        await expect(cartNumber).toBe('5');
+
         //moving to cart to select "+" on some items and select "continue shopping"
         await addPlus.Continue();
+
+        await browser.waitUntil(
+            async () => {
+                cartNumber = await this.cartConfirm.getText();
+                return cartNumber === '7';
+            },
+            {
+                timeout: 5000,
+                timeoutMsg: 'Cart number did not update to 6 within the timeout'
+            }
+        );
+
+        await expect(cartNumber).toBe('7');
 
 
        

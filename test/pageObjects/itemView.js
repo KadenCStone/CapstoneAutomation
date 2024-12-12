@@ -17,7 +17,7 @@ class itemView extends Site {
     }
     async flow () {
 
-        await this.open();
+        await this.pullUp();
 
         await expect(browser).toHaveUrl('https://www.qualtry.com/');
 

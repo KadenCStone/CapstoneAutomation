@@ -221,7 +221,7 @@ get cartConfirm() {
         await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
 
         await this.p2i10.click();
-        await popup.closePopup();
+        popup.closePopup();
         await this.primaryText.setValue('GoodChristmas');
         await this.reviewCheck.click();
         await this.addTo.click();
@@ -257,6 +257,7 @@ get cartConfirm() {
         await this.bottomLine.setValue('Burts');
         await this.reviewCheck.click();
         await this.addTo.click();
+        await this.bottomConfirm.waitForDisplayed();
 
         
         await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
@@ -266,6 +267,8 @@ get cartConfirm() {
         await this.nameOption.setValue('Mort');
         await this.reviewCheck.click();
         await this.addTo.click();
+        await this.bottomConfirm.waitForDisplayed();
+
 
         
         await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
@@ -275,55 +278,64 @@ get cartConfirm() {
         await this.dateOption.setValue('4000');
         await this.reviewCheck.click();
         await this.addTo.click();
+        await this.bottomConfirm.waitForDisplayed();
 
         
         await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
 
-        await this.p2i16.click();
-        await this.secondSizeOption.click();
-        await this.personalCaps.setValue('PHILLY');
-        popup.closePopup();
-        await this.addVerify.click();
+
+        //now sold out yay
+
+        // await this.p2i16.click();
+        // await this.secondSizeOption.click();
+        // await this.personalCaps.setValue('PHILLY');
+        // popup.closePopup();
+        // await this.addVerify.click();
+        // await expect(browser).toHaveUrl('https://www.qualtry.com/cart')
 
         
-        await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
+        // await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
         
-        await this.p2i17.click();
-        await this.secondSizeOption.click();
-        await this.personalCaps.setValue('NotPhil');
-        await this.personalLow.setValue('Cheese');
-        await this.addVerify.click();
-
-        
-        await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
-
-        await this.p2i18.click();
-        await this.secondSizeOption.click();
-        await this.santaPersonal.setValue('BarryPhil');
-        await this.addVerify.click();
+        // await this.p2i17.click();
+        // await this.secondSizeOption.click();
+        // await this.personalCaps.setValue('NotPhil');
+        // await this.personalLow.setValue('Cheese');
+        // await this.addVerify.click();
+        // await expect(browser).toHaveUrl('https://www.qualtry.com/cart')
 
         
-        await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
+        // await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
 
-        await this.p2i19.click();
-        await this.printSide.click();
-        await this.personalCaps.setValue('HuluWIth');
-        await this.personalLow.setValue('KingKong');
-        await this.addVerify.click();
+        // await this.p2i18.click();
+        // await this.secondSizeOption.click();
+        // await this.santaPersonal.setValue('BarryPhil');
+        // await this.addVerify.click();
+        // await expect(browser).toHaveUrl('https://www.qualtry.com/cart')
 
         
-        await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
+        // await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
 
-        await this.p2i20.click();
-        await this.printSide.click();
-        await this.personalLow.setValue('holy');
-        await this.personal2Low.setValue('grail');
-        await this.addVerify.click();
+        // await this.p2i19.click();
+        // await this.printSide.click();
+        // await this.personalCaps.setValue('HuluWIth');
+        // await this.personalLow.setValue('KingKong');
+        // await this.addVerify.click();
+        // await expect(browser).toHaveUrl('https://www.qualtry.com/cart')
+
+        
+        // await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
+
+        // // await this.p2i20.click();
+        // // await this.printSide.click();
+        // // await this.personalLow.setValue('holy');
+        // // await this.personal2Low.setValue('grail');
+        // // await this.addVerify.click();
+        // // await expect(browser).toHaveUrl('https://www.qualtry.com/cart')
 
 
         const cartNumber = await this.cartConfirm.getText();
 
-        await expect(cartNumber).toBe('57');
+        await expect(cartNumber).toBe('52');
         
         await browser.url('https://www.qualtry.com/collections/christmas-1?page=2');
 

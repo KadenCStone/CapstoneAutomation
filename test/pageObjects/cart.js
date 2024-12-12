@@ -4,6 +4,7 @@ import addCart from './cartPages/addToCart.js';
 import recentlyViewed from './cartPages/recentlyViewed.js';
 import removeThese from './cartPages/removeCart.js';
 import addEverything from './cartPages/addingItAll.js';
+import cartCheck from './cartPages/checkMyCart.js'
 
 class Cart extends Site {
 
@@ -23,10 +24,11 @@ class Cart extends Site {
         //calling "removeCart" from removeCart.js to remove a couple items using the "remove" button and selecting the "-" symbol
         await removeThese.itemsPlease();
 
-        // calling in "addEverything" from addingItAll.js to add everything on the site to the cart
+        //calling in "addEverything" from addingItAll.js to add everything on the site to the cart
         await addEverything.toCart();
 
         //calling in "cartCheck" from checkMyCart.js to check all links in cart to make sure they take me to the same place as when I clicked "add to cart"
+        await cartCheck.whatHere();
 
         //calling in "checkMessage" from checkbox.js to check the box and write a message
 

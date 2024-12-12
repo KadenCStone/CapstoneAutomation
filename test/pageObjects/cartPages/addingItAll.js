@@ -17,7 +17,7 @@ class addEverything extends Site {
         await browser.url('https://www.qualtry.com/collections/christmas-1')
 
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1');
-        await $('[data-product-handle="personalized-bells-vintage-christmas-ornament"]').waitForDisplayed({ timeout: 2000 });
+        await $('[data-product-handle="personalized-kids-santa-bags-cotton"]').waitForExist({ timeout: 2000 });
 
         await pageOne.go1();
 

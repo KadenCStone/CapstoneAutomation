@@ -8,7 +8,7 @@ class bike extends Site {
     async cycleThrough () {
         
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1');
-        await $('[data-product-handle="personalized-bells-vintage-christmas-ornament"]').waitForDisplayed({ timeout: 2000 });
+        await $('[data-product-handle="personalized-velvet-trimmed-christmas-stockings"]').waitForDisplayed({ timeout: 2000 });
 
         await this.nextPageBtn.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1?page=2');

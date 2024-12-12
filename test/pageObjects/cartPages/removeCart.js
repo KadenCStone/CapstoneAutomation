@@ -23,7 +23,6 @@ class removeThese extends Site {
         await browser.url('https://www.qualtry.com/cart');
 
         await this.byeGlass.click();
-        await this.byeGlass.click();
 
         await this.byeShot.scrollIntoView();
         await this.byeShot.click();
