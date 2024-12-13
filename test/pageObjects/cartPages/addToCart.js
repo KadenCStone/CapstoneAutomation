@@ -42,8 +42,8 @@ class addCart extends Site {
     get fillShot () {
         return $('[id="initial-0"]');
     }
-    get shotSelect () {
-        return $('//img[@alt="719"]');
+    get fillMiddle() {
+        return $('[id="middle-line-1"]');
     }
     get addWallet() {
         return $('[data-product-handle="leather-phone-wallets"]');
@@ -59,9 +59,6 @@ class addCart extends Site {
     }
     get submitCart () {
         return $('//button[@name="add"]');
-    }
-    get continueShopping () {
-        return $('//button[contains(text(), "CONTINUE SHOPPING")]');
     }
     get cartConfirm() {
         return $('[class="cart-link__bubble-num"]');
@@ -113,9 +110,7 @@ class addCart extends Site {
         await this.addMug.click();
         await this.checkbox.click();
         await this.submitCart.click();
-        popup.closePopup();
-        await this.continueShopping.click();
-    
+        popup.closePopup();    
 
         await browser.url('https://www.qualtry.com');
 
@@ -127,12 +122,11 @@ class addCart extends Site {
         await expect(browser).toHaveUrl('https://www.qualtry.com/search?type=product&q=Shot+Glass');
 
         await this.addShot.click();
-        await $('[class="dynamic-preview-form-section extra"]').waitForDisplayed({ timeout: 2000 });
-        await this.shotSelect.click();
         await this.fillShot.setValue('K');
+        await this.fillMiddle.setValue('P');
         await this.checkbox.click();
         await this.submitCart.click();
-        await this.continueShopping.click();
+        await this.bottomConfirm.waitForDisplayed();
 
 
         await browser.url('https://www.qualtry.com');
@@ -149,13 +143,23 @@ class addCart extends Site {
         await this.walletLetter.setValue('GabeT');
         await this.checkbox.click();
         await this.submitCart.click();
-        await this.continueShopping.click();
+        await this.bottomConfirm.waitForDisplayed();
 
         await browser.url('https://www.qualtry.com');
 
 
         var cartNumber = await this.cartConfirm.getText();
-        await expect(cartNumber).toBe('5');
+
+        await browser.waitUntil(
+            async () => {
+                cartNumber = await this.cartConfirm.getText();
+                return cartNumber === '5';
+            },
+            {
+                timeout: 5000,
+                timeoutMsg: 'Cart number did not update to 6 within the timeout'
+            }
+        );
 
         //moving to cart to select "+" on some items and select "continue shopping"
         await addPlus.Continue();

@@ -1,5 +1,6 @@
 import { $ } from '@wdio/globals';
 import Site from '../../page.js';
+import popup from '../../searchPages/popup.js';
 
 class pageOne extends Site {
 get p1i1 () {
@@ -211,7 +212,7 @@ async go1 () {
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
     var cartNumber = await this.cartConfirm.getText();
-
+    await expect(cartNumber).toBe('3');
 
     await this.viewBtn.click();
 
@@ -220,72 +221,85 @@ async go1 () {
     await this.i1Color.click();
     await this.i1Design.click();
     await this.i1Change.setValue('Benny');
+    popup.closePopup();
     await this.addTo.click();
     
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+    // await expect(cartNumber).toBe('4');
+
+
 
     await this.p1i2.click();
     await this.i2Text.waitForExist();
     await this.i2Text.setValue('Merica')
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
 
-    
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+    // await expect(cartNumber).toBe('5');
 
     await this.p1i3.click();
     await this.sizeOption.click();
     await this.bottomLine.setValue('Turner');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
-
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+    // await expect(cartNumber).toBe('6');
+
+
 
     await this.p1i4.click();
     await this.sizeOption.click();
     await this.bottomLine.setValue('Jimmothy');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
-
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+    // await expect(cartNumber).toBe('7');
+
 
     await this.p1i5.click();
     await this.i1Color.click();
     await this.i1Design.click();
     await this.i5Text.setValue('Harry');
     await this.addTo.click();
-
+    
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+    // await expect(cartNumber).toBe('8');
+
 
     await this.p1i6.click();
     await this.bottomLine.setValue('Jorge');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
-
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+    // await expect(cartNumber).toBe('9');
+
 
     await this.p1i7.click();
     await this.sizeOption.click();
     await this.bottomLine.setValue('Jimmothy');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
-
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+    // await expect(cartNumber).toBe('10');
+
 
     await this.p1i8.click();
     await this.i8Initial.setValue('K');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('11');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -297,22 +311,28 @@ async go1 () {
     await this.reviewCheck.click();
     await this.addTo.click();
 
+    // await expect(cartNumber).toBe('12');
+
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
     await this.p1i10.click();
-    await this.dateOption.setValue('3000');
+    await this.dateOption.setValue('5000');
     await this.reviewCheck.click();
     await this.addTo.click();
+
+    // await expect(cartNumber).toBe('13');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
-    await this.p1i11.waitForDisplayed({ timeout: 3000 });
+    await this.p1i11.waitForDisplayed({ timeout: 5000 });
     await this.p1i11.click();
     await this.primaryText.setValue('Benjamin');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('14');
 
     
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -323,7 +343,9 @@ async go1 () {
     await this.bottomLine.setValue('HelloAgain');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('15');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -332,7 +354,9 @@ async go1 () {
     await this.primaryText.setValue('Beth');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('16');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -342,7 +366,9 @@ async go1 () {
     await this.bottomLine.setValue('harold');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('17');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -353,7 +379,9 @@ async go1 () {
     await this.relatedProducts.isClickable();
     await this.relatedProducts.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('18');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -362,7 +390,9 @@ async go1 () {
     await this.primaryText.setValue('Bernie');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('19');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -372,7 +402,9 @@ async go1 () {
     await this.nameOption.setValue('Vlad');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('20');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -382,13 +414,20 @@ async go1 () {
     await this.reviewCheck.click();
     await this.addTo.click();
 
+    // await expect(cartNumber).toBe('21');
+
+
     await browser.url('https://www.qualtry.com/collections/christmas-1');
+
 
     await this.p1i19.click();
     await this.primaryText.setValue('Barry');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+
+    // await expect(cartNumber).toBe('22');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -397,7 +436,9 @@ async go1 () {
     await this.primaryText.setValue('Henry');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('23');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -406,7 +447,9 @@ async go1 () {
     await this.nameOption.setValue('Jerry');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('24');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -415,7 +458,9 @@ async go1 () {
     await this.bottomLine.setValue('Jimmothy');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('25');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -424,7 +469,9 @@ async go1 () {
     await this.bottomLine.setValue('aiefja');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('26');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -434,7 +481,10 @@ async go1 () {
     await this.bottomLine.setValue('asdlfjaef');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+
+    // await expect(cartNumber).toBe('27');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -445,7 +495,9 @@ async go1 () {
     await this.bottomLine.setValue('princessing');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('28');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -454,7 +506,9 @@ async go1 () {
     await this.bottomLine.setValue('Karen');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('29');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -464,7 +518,9 @@ async go1 () {
     await this.nameOption.setValue('Henry');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('30');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -473,9 +529,9 @@ async go1 () {
     await this.bottomLine.setValue('Timmy');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
 
-    
+    // await expect(cartNumber).toBe('31');
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -484,8 +540,9 @@ async go1 () {
     await this.primaryText.setValue('homeslice');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
 
+    // await expect(cartNumber).toBe('32');
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -494,7 +551,9 @@ async go1 () {
     await this.secondText.setValue('werwev');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('33');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -503,7 +562,9 @@ async go1 () {
     await this.primaryText.setValue('BOBBERT');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+    // await expect(cartNumber).toBe('34');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -513,7 +574,10 @@ async go1 () {
     await this.secondaryText.setValue('aeuhaie')
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
+
+    // await expect(cartNumber).toBe('35');
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -523,8 +587,9 @@ async go1 () {
     await this.bottomLine.setValue('asejfaliejf');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
 
+    // await expect(cartNumber).toBe('36');
     
     await browser.url('https://www.qualtry.com/collections/christmas-1');
 
@@ -534,7 +599,7 @@ async go1 () {
     await this.secondText.setValue('harry');
     await this.reviewCheck.click();
     await this.addTo.click();
-    await this.bottomConfirm.waitForDisplayed({ timeout: 3000 });
+    await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
 
 
     await browser.url('https://www.qualtry.com/collections/christmas-1');
@@ -554,7 +619,6 @@ async go1 () {
         },
         {
             timeout: 5000,
-            timeoutMsg: 'Cart number did not update to 6 within the timeout'
         }
     );
 

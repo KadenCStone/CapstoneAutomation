@@ -23,7 +23,7 @@ class addPlus extends Site {
 
         await $('.cart__page').waitForDisplayed({ timeout: 2000 });
         
-        const cartNumber = await this.cartConfirm.getText();
+        var cartNumber = await this.cartConfirm.getText();
         await expect(cartNumber).toBe('5');
         
 
@@ -38,10 +38,21 @@ class addPlus extends Site {
         await this.plusSecond.click();
 
         await this.continueShopping.click()
-        await expect(browser).toHaveUrl('https://www.qualtry.com/collections/karis-test')
+        await expect(browser).toHaveUrl('https://www.qualtry.com/collections/karis-test');
+
 
 
         await browser.url('https://www.qualtry.com');
+
+        await browser.waitUntil(
+            async () => {
+                cartNumber = await this.cartConfirm.getText();
+                return cartNumber === '7';
+            },
+            {
+                timeout: 5000,
+            }
+        );
     }
 }
 export default new addPlus;

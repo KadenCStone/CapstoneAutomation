@@ -28,6 +28,12 @@ class recentlyViewed extends Site {
     get recentTab() {
         return $('[data-section-type="recently-viewed"]')
     }
+    get cartConfirm() {
+        return $('[class="cart-link__bubble-num"]');
+    }
+    get bottomConfirm() {
+        return $('[class="bottom-banner-buttons"]');
+    }
 
 
     async toCart () {
@@ -40,6 +46,8 @@ class recentlyViewed extends Site {
         await this.shotLetter.setValue('B');
         await this.check.click();
         await this.submit.click();
+        await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
 
         await this.goCart.click();
 
@@ -48,8 +56,21 @@ class recentlyViewed extends Site {
         await this.glassRecent.click();
         await this.check.click();
         await this.submit.click();
+        await this.bottomConfirm.waitForDisplayed({ timeout: 5000 });
+
 
         await browser.url('https://www.qualtry.com');
+
+        var cartNumber = await this.cartConfirm.getText();
+        await browser.waitUntil(
+            async () => {
+                cartNumber = await this.cartConfirm.getText();
+                return cartNumber === '9';
+            },
+            {
+                timeout: 6000,
+            }
+        );
 
     }
 
