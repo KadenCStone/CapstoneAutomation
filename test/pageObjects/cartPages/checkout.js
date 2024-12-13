@@ -17,6 +17,9 @@ class checkingOut extends Site {
     get checkBtn () {
         return $('//div[@class="cart__item-row cart__checkout-wrapper"]/button[@class="btn cart__checkout"]');
     }
+    get backBtn() {
+        return $('[aria-label="Back"]');
+    }
 
     async check () {
         await browser.url('https://www.qualtry.com');
@@ -27,10 +30,8 @@ class checkingOut extends Site {
         await this.shopPay.click();
         $('[class="_Identity_60hue_83"]').waitForDisplayed();
                       
-
-        
-        await browser.url('https://www.qualtry.com')
-        
+        await this.backBtn.click();
+                
         $('[href="/cart"]').waitForDisplayed();
         await this.cartBtn.click();
 
@@ -46,10 +47,6 @@ class checkingOut extends Site {
         var linkage = await browser.getUrl();  
         expect(linkage).toContain('https://www.qualtry.com/checkouts/');
 
-
-
-
-        await browser.url('https://www.qualtry.com')
 
     }
 

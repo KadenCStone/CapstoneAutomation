@@ -87,8 +87,6 @@ class searchBar extends Site {
         await browser.url('https://qualtry.com');
 
 
-        // await this.Bar.setValue(textBomb);
-
         await browser.url('https://qualtry.com');
 
     }

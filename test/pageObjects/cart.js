@@ -39,8 +39,6 @@ class Cart extends Site {
         //calling in "checkMessage" from checkbox.js to check the box and write a message
 
         await checkingOut.check();
-        await expect(browser).toHaveUrl('https://www.qualtry.com/')
-
 
         
 

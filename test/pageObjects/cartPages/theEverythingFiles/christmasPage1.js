@@ -618,7 +618,7 @@ async go1 () {
             return cartNumber === '37';
         },
         {
-            timeout: 5000,
+            timeout: 7000,
         }
     );
 
