@@ -1,6 +1,6 @@
 import { $ } from '@wdio/globals';
-import Site from '../page.js';
-class checkingOut extends Site {
+import Site from './mySite.js';
+class CheckingOut extends Site {
     
     get shopPay () {
         return $('//div[@class="cart__item-row cart__checkout-wrapper"]/div[@class="additional-checkout-buttons"]');
@@ -21,7 +21,7 @@ class checkingOut extends Site {
         return $('[aria-label="Back"]');
     }
 
-    async check () {
+    async Check () {
         await browser.url('https://www.qualtry.com');
 
         await this.cartBtn.click();
@@ -53,4 +53,4 @@ class checkingOut extends Site {
 }
 
 
-export default new checkingOut
+export default new CheckingOut

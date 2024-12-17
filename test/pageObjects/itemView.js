@@ -1,46 +1,35 @@
 import { $ } from '@wdio/globals';
-import Site from './page.js';
-import bike from './itemPages/cycle.js';
+import Site from './mySite.js';
+import bike from './Cycle.js';  // Import the 'bike' class
 
 class itemView extends Site {
-    get viewAll () {
+    // Selectors for the different view options
+    get viewAll() {
         return $('//div/a[@href="/collections/christmas-1"]');
     }
-    get smallView () {
+    get smallView() {
         return $('//button[@title="Small"]');
     }
-    get largeVeiw () {
+    get largeView() {
         return $('//button[@data-view="large"]');
     }
-    get listView () {
+    get listView() {
         return $('//button[@data-view="list"]');
     }
-    async flow () {
 
-        await this.pullUp();
-
+    async flow() {
+        await this.NavSite();
         await expect(browser).toHaveUrl('https://www.qualtry.com/');
 
+        // View All and navigate
         await this.viewAll.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1');
 
-        await this.smallView.click();
-        await bike.cycleThrough();
+        await bike.cycleThrough('small');  // Pass 'small' view type to cycle through
 
-        await browser.url('https://www.qualtry.com/collections/christmas-1');
-        
-        await this.largeVeiw.click();
-        await bike.cycleThrough();
-
-        await browser.url('https://www.qualtry.com/collections/christmas-1');
-
-        await this.listView.click();
-        await bike.cycleThrough();
-
+        // Go back to the main page after finishing
         await browser.url('https://www.qualtry.com');
-
     }
-    
 }
 
-export default new itemView;
+export default new itemView();
