@@ -1,9 +1,8 @@
 import { $ } from '@wdio/globals';
 import Site from './mySite.js';
-import bike from './Cycle.js';  // Import the 'bike' class
+import bike from './Cycle.js';  
 
 class itemView extends Site {
-    // Selectors for the different view options
     get viewAll() {
         return $('//div/a[@href="/collections/christmas-1"]');
     }
@@ -21,13 +20,10 @@ class itemView extends Site {
         await this.NavSite();
         await expect(browser).toHaveUrl('https://www.qualtry.com/');
 
-        // View All and navigate
         await this.viewAll.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1');
 
-        await bike.cycleThrough('small');  // Pass 'small' view type to cycle through
-
-        // Go back to the main page after finishing
+        await bike.cycleThrough('small');  
         await browser.url('https://www.qualtry.com');
     }
 }
