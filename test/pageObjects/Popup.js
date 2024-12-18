@@ -11,7 +11,6 @@ class popup extends Site {
         return $('//button[@aria-label="Close"]');
     }
 
-    // Close the popup if it exists
     async closePopup() {
         this.alert.waitForDisplayed({ timeout: 5000 });
         this.closeButton.click();

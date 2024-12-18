@@ -9,6 +9,7 @@ class pageOne extends Site {
   get bottomConfirm() { return $('[class="bottom-banner confirmation opened"]'); }
   get cartConfirm() { return $('[class="cart-link__bubble-num"]'); }
   get viewBtn() { return $('[class="icon icon-view-list"]'); }
+  get ListView() {return $('[data-view="list"]')}
 
   get personalizationSelectors() {
     return {
@@ -67,6 +68,7 @@ class pageOne extends Site {
 
   async go1() {
     const pages = ['https://www.qualtry.com/collections/black-november-tea-towels?sort_by=best-selling'];
+    await this.ListView.click()
     const pageItemCounts = [30];
   
     for (let pageIndex = 0; pageIndex < pages.length; pageIndex++) {

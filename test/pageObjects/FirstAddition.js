@@ -124,7 +124,6 @@ class AddCart extends Site {
             }
         ];
 
-        // Loop through all products
         for (let product of products) {
             console.log(`Searching for: ${product.searchText}`);
 

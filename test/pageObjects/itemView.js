@@ -23,7 +23,8 @@ class itemView extends Site {
         await this.viewAll.click();
         await expect(browser).toHaveUrl('https://www.qualtry.com/collections/christmas-1');
 
-        await bike.cycleThrough('small');  
+        await bike.cycleThrough('small'); 
+
         await browser.url('https://www.qualtry.com');
     }
 }

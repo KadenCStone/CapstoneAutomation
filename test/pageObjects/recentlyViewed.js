@@ -3,7 +3,6 @@ import Site from './mySite.js';
 
 class RecentlyViewed extends Site {
 
-    // Selectors
     get goCart() {
         return $('#HeaderCartTrigger');
     }
